@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('แบบฝึกหัดที่ 3', async ({ page }) => {
+test('login-failure and error handling', async ({ page }) => {
   await page.goto('https://www.saucedemo.com/');
 
   await page.locator('[data-test="username"]').click();
